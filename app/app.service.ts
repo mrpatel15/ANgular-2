@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class FriendService {
+export class UserService {
   friends:Array<any>;
 
   constructor() {

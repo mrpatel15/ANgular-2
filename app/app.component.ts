@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { FriendService } from 'app/app.service';
+import { UserService } from 'app/app.service';
 
 @Component({
   selector: 'my-friends',
-  providers : [FriendService],
+  providers : [UserService],
   styles: [`
   div {
      background-color:#EFEFEF;
@@ -24,10 +24,10 @@ import { FriendService } from 'app/app.service';
   </div>
   `
 })
-export class FriendComponent {
-  componentName: string = 'FriendComponent';
+export class UserComponent {
+  componentName: string = 'UserComponent';
   //Assign
-    constructor(_friendService: FriendService) {
+    constructor(_friendService: UserService) {
     this.friends = _friendService.getFriends();
   }
 }

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { bootstrap } from '@angular/platform-browser-dynamic';
 
 /** Nested Component */
-import { FriendComponent } from 'app/app.component';
-import { FriendService } fromt 'app/app.service';
+import { UserComponent } from 'app/app.component';
+import { UserService } fromt 'app/app.service';
 
 @Component({
   selector: 'my-app',
-  directives: [FriendComponent],
+  directives: [UserComponent],
   styles: [`
   h1 {
     color:#545454;
